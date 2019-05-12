@@ -1,0 +1,276 @@
+
+div.bodyWrap {
+    width: 100%;
+    min-width: 1200px;
+
+    div.body {
+        width: 1200px;
+        margin: 0 auto;
+        // background: rgba(62, 146, 69, 1);
+        padding-top: 20px;
+
+        div.bodyleft {
+            box-sizing: border-box;
+            float: left;
+            background: #fff;
+            width: 180px;
+            border:1px solid rgba(230, 234, 238, 1);
+            box-shadow:0px 0px 35px 0px rgba(0, 0, 0, 0.05);
+            border-radius:6px;
+            padding-bottom: 10px;
+            margin-right: 20px;
+
+            div.line {
+                height: 1px;
+                width: 100%;
+                background: rgba(230, 234, 238, 1);
+                margin: 14px 0;
+            }
+
+            div.pool {
+                font-size:16px;
+                padding-left: 10px;
+
+                p.token {
+                    font-weight:500;
+                    color:rgba(51,51,68,0.7);
+                    margin: 0;
+                    margin-top: 14px;
+                }
+                p.per {
+                    margin: 0;
+                    margin-top: 5px;
+
+                    span.section {
+                        display: inline-block;
+                        width: 50px;
+                        color: rgba(51, 51, 68, 1);
+                        font-weight:bold;
+                    }
+
+                    span.sectionNum {
+                        display: inline-block;
+                        font-weight:bold;
+                        color:rgba(91,152,250,1);
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            div.total {
+                padding-left: 10px;
+
+                p.title {
+                    margin: 0;
+                    font-size:14px;
+                    font-weight:500;
+                    color:rgba(150,150,162,1);
+                }
+                p.usdxNum {
+                    margin: 0;
+                    margin-top: 5px;
+                    font-size:16px;
+                    font-weight:bold;
+                    color:rgba(51,51,68,1);
+                }
+            }
+
+            div.globalpool {
+                margin-top: 10px;
+                padding-left: 10px;
+
+                p.title {
+                    margin: 0;
+                    font-size:14px;
+                    font-weight:500;
+                    color:rgba(150,150,162,1);
+                }
+                p.status {
+                    margin: 0;
+                    margin-top: 6px;
+
+                    span.token {
+                        display: inline-block;
+                        font-size:14px;
+                        font-weight:500;
+                        color:rgba(51,51,68,1);
+                        // background: red;
+                        width: 50px;
+                    }
+                    span.tokenNum {
+                        font-size:14px;
+                        font-weight:bold;
+                        color:rgba(51,51,68,1);
+                    }
+                }
+            }
+        }
+
+
+        div.bodyright {
+            float: left;
+
+            div.generate {
+                width: 320px;
+                min-height: 324px;
+                background: #fff;
+                border:1px solid rgba(230, 234, 238, 1);
+                box-shadow:0px 0px 35px 0px rgba(0, 0, 0, 0.05);
+                border-radius:6px;
+                float: left;
+                margin-right: 20px;
+                padding-bottom: 15px;
+
+                &.nomargin {
+                    margin-right: 0;
+                }
+
+                h2 {
+                    margin: 0;
+                    font-size:18px;
+                    font-weight:500;
+                    color:rgba(91,152,250,1);
+                    position: relative;
+                    padding-left: 10px;
+                    padding-top: 14px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 4px;
+                        height: 16px;
+                        position: absolute;
+                        left: 0;
+                        top: 18px;
+                        background: rgba(91, 152, 250, 1);
+                    }
+                }
+
+                p.details {
+                    margin: 0;
+                    margin-top: 5px;
+                    padding-left: 10px;
+                    font-size:14px;
+                    font-weight:500;
+                    color:rgba(150,150,162,1);
+                }
+
+                div.input {
+                    
+                    input {
+                        float: left;
+                        padding: 0px;
+                        border-width: 1px;
+                        height: 33px;
+                        margin-left: 10px;
+                    }
+                    div.select {
+                        color: rgba(51, 51, 68, 1);
+                        position: relative;
+                        float: left;
+                        width: 82px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+                        border:1px solid rgba(221,221,230,1);
+                        border-radius:0px 6px 6px 0px;
+                    }
+                }
+
+                div.deposit {
+                    width:120px;
+                    height:35px;
+                    line-height: 35px;
+                    background:rgba(91,152,250,1);
+                    border-radius:6px;
+                    text-align: center;
+                    color: #fff;
+                    opacity: 0.6;
+                    transition: 0.3s;
+                    -moz-user-select: -moz-none;
+                    -moz-user-select: none;
+                    -o-user-select: none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    margin-top: 20px;
+                    margin-left: 10px;
+
+                    &.activeDeposit {
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                    &.activeWithdraw {
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                    &.activeDestroy {
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                }
+
+                div.errtips {
+                    width: 298px;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                    background:rgba(255,255,255,1);
+                    box-shadow:0px 0px 15px 0px rgba(116,116,116,0.2);
+                    border-radius:4px;
+                    font-size:14px;
+                    font-weight:500;
+                    color:rgba(150,150,162,1);
+                    border-left: 3px solid rgba(252, 86, 69, 1);
+                    background: url('../assets/img/warning.png') no-repeat 10px 10px;
+                    background-size: 20px;
+                    padding-left: 40px;
+                    padding-bottom: 5px;
+
+                    h4 {
+                        margin: 0;
+                        padding-top: 8px;
+                        color: #444;
+                    }
+                }
+
+                div.myBalanceOnPool {
+                    padding-left: 10px;
+
+                    p.title {
+                        margin: 0;
+                        margin-top: 20px;
+                        font-size:14px;
+                        font-weight:500;
+                        color:rgba(150,150,162,1);
+                    }
+                    p.partToken {
+                        margin: 0;
+                        margin-top: 6px;
+                        width: 149px;
+                        // background: red;
+                        float: left;
+                        span {
+                            display: inline-block;
+                            width: 50px;
+                            // background: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

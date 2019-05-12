@@ -1,0 +1,95 @@
+div.headerWrap {
+    color: #fff;
+    background: rgba(34, 44, 60, 1);
+    width: 100%;
+    min-width: 1200px;
+
+    div.myHeader {
+        width: 1200px;
+        margin: 0 auto;
+        height: 85px;
+
+        div.logo {
+            float: left;
+            padding-top: 15px;
+            margin-right: 20px;
+
+            img {
+                width: 54px;
+            }
+        }
+
+        table.balanceTable {
+            float: left;
+            border-spacing: 0;
+            padding-top: 18px;
+
+            tr {
+                height: 48px;
+            }
+
+            td {
+                &.noborder { border: none; }
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+                // background: red;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                span.token {
+                    color: rgba(175, 179, 187, 1);
+                    font-size: 15px;
+                }
+                img {
+                    margin-left: 10px;
+                    width: 12px;
+                }
+                span.balance {
+                    display: block;
+                    font-size: 17px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        div.status {
+            float: right;
+
+            p.title {
+                margin-bottom: 5px;
+                // background: green;
+                span.netdot {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                }
+                span.nettype {
+                    font-size: 16px;
+                }
+            }
+            p.logoin {
+                margin-top: 5px;
+                font-size: 16px;
+                // background: green;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
